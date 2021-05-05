@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="iconesfa/css/all.min.css">
     <link rel="icon" type="image/svg" sizes="100x100" href="images/logo/Reservia.svg">
     <title> Reservia</title>
 </head>
@@ -11,7 +12,7 @@
     <!--Logo + liste + formulaire + paragraphe -->
     <header>
 
-        <div class="logo">
+        <div id="logo">
         <img src="images/logo/Reservia@3x.png" alt="logo accueil" width="90" height="40" >
         </div>
 
@@ -29,84 +30,91 @@
 
 
         <div>
-        <p>Filtres</p>
+        
         <div class="bouton">
-            
-            <input type="button" value="Economique">
-            <input type="button" value="Famillial">
-            <input type="button" value="Romantique">
-            <input type="button" value="Animaux autorisés">
+            Filtres
+
+            <ul>
+                <li><div id="iconeheader"><i class="fas fa-money-bill-wave"></i></div><input type="button" value="Economique"></li>
+                <li><div id="iconeheader"><i class="fas fa-child"></i></div><input type="button" value="Famillial"></li>
+                <li><div id="iconeheader"><i class="fas fa-heart"></i></div><input type="button" value="Romantique"></li>
+                <li><div id="iconeheader"><i class="fas fa-dog"></i></div><input type="button" value="Animaux autorisés"></li>
+            </ul>
+
 
         </div>
 
-        <div class="icone_info">
-            <img src="icones/info.svg" alt="icone info" width="10" height="10">
-        </div>    
-
         <div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="iconeheader"><i class="fas fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>  
+        </div>
 
 
 
     </header>
-
+    <main>
     <!--Hébergements à Marseilles-->
     <section>
     <div class="section">
         <h1>Hébergements à Marseille</h1>
 
         <!--cannebiere port mouette-->
-        <div class="cpm">
+        <article class="cpm">
             <div class="cannebiere">
-                <img src="images/hebergements/1_xlarge/auberge_la_cannebiere.jpg" alt="Photo auberge de la cannebiere">
+                <figure><img src="images/hebergements/1_xlarge/auberge_la_cannebiere.jpg" alt="auberge de la cannebiere" width="200px" height="150px"></figure>
                 <h2>Auberge de la Cannebière</h2>
                 <p>Nuit à partir de 25 €</p>
-                <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
-            </div>
+                <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div id="etoilegrise"><i class="fas fa-star"></i></div>
+                
+            </article>
 
-            <div class="port">
-                <img src="images/hebergements/1_xlarge/hotel_du_port.jpg" alt="hotel du port">
+            <article class="port">
+                <figure><img src="images/hebergements/1_xlarge/hotel_du_port.jpg" alt="hotel du port" width="200px" height="150px"></figure>
                 <h2>Hotêl du port</h2>
                 <p>Nuit à partir de 52 € </p>
-                <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
+                <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
 
-            </div>
 
-            <div class="mouettes">
-                <img src="images/hebergements/1_xlarge/hotel_les_mouettes.jpg" alt="Hotel les mouettes">
+            </article>
+
+            <article class="mouettes">
+                <figure><img src="images/hebergements/1_xlarge/hotel_les_mouettes.jpg" alt="Hotel les mouettes" width="200px" height="150px"></figure>
                 <h2>Hotêl Les mouettes</h2>
                 <p>Nuit à partir de 76 € </p>
-                <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
+                <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div id="etoilegrise"><i class="fas fa-star"></i></div>
 
-            </div>
+
+            </article>
 
         </div>
     
 
         <!--Mer Panier Amina-->
         <div class="mpa">
-            <div class="Mer">
-                <img src="images/hebergements/1_xlarge/hotel_de_la_mer.jpg" alt="hotel de la mer">
+            <article class="Mer">
+                <figure><img src="images/hebergements/1_xlarge/hotel_de_la_mer.jpg" alt="hotel de la mer" width="200px" height="150px"></figure>
                 <h2>Hôtel de la mer</h2>
                 <p>Nuit à partir de 46 €</p>
-                <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
-            </div>
+                <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div id="etoilegrise"><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </article>
 
-            <div class="panier">
-                <img src="images/hebergements/1_xlarge/auberge_le_panier.jpg" alt="Auberge le panier">
+            <article class="panier">
+                <figure><img src="images/hebergements/1_xlarge/auberge_le_panier.jpg" alt="Auberge le panier" width="200px" height="150px"></figure>
                 <h2>Auberge Le Panier</h2>
                 <p>Nuit à partir de 23 €</p>
-                <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
+                <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div id="etoilegrise"><i class="fas fa-star"></i></div>
 
-            </div>
 
-            <div class="amina">
-                <img src="images/hebergements/1_xlarge/hotel_chez_amina.jpg" alt="Hotel chez Amina">
+            </article>
+
+            <article class="amina">
+                <figure><img src="images/hebergements/1_xlarge/hotel_chez_amina.jpg" alt="Hotel chez Amina" width="200px" height="150px"></figure>
                 <h2>Hôtel chez Amina</h2>
                 <p>Nuit à partir de 96 €</p>
-                <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
-            </div>
+                <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+
+            </article>
 
             <div class="afficher_plus">
             <h2>Afficher plus</h2>
@@ -123,25 +131,30 @@
             <h1> Les plus populaires</h1>
 
                 <div class="matin">
-                    <img src="images/hebergements/1_xlarge/hotel_le_soleil_du_matin.jpg" alt="hotel le soleil du matin">
+                    <figure><img src="images/hebergements/1_xlarge/hotel_le_soleil_du_matin.jpg" alt="hotel le soleil du matin" width="200px" height="150px"></figure>
                     <h2>Hôtel Le soleil du matin</h2>
                     <p>Nuit à partir de 128 € </p>
-                    <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
-                </div>
+                    <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+
+                </article>
 
                 <div class="coeur_de_leau">
-                    <img src="images/hebergements/1_xlarge/au_coeur_de_leau.jpg" alt="au coeur de l'eau">
+                    <figure><img src="images/hebergements/1_xlarge/au_coeur_de_leau.jpg" alt="au coeur de l'eau" width="200px" height="150px"></figure>
                     <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                     <p>Nuit à partir de 71 €</p>
-                    <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
-                </div>
+                    <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div id="etoilegrise"><i class="fas fa-star"></i></div>
+
+
+                </article>
 
                 <div class="bleu_et_blanc">
-                    <img src="images/hebergements/1_xlarge/hotel_tout_bleu_et_blanc.jpg" alt="Hotel tout bleu et blanc">
+                    <figure><img src="images/hebergements/1_xlarge/hotel_tout_bleu_et_blanc.jpg" alt="Hotel tout bleu et blanc" width="200px" height="150px"></figure>
                     <h2>Hôtel Tout bleu et blanc</h2>
                     <p>Nuit à partir de 68 €</p>
-                    <img src="icones/etoilebleu.svg" alt="etoilebleu"> <img src="icones/etoilegrise.svg" alt="etoilegrise">
-                </div>
+                    <div id="etoilebleu"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div id="etoilegrise"><i class="fas fa-star"></i></div>
+
+                </article>
 
         </div>
     </aside>
@@ -149,61 +162,68 @@
     <!--Activité à Marseille-->   
     <aside>
         <div class="activite">
-            <div class="vieux_port">
-            <img src="images/activites/1_xlarge/Vieux_port.jpg" alt="Vieux port">
+            <h1>Activités à Marseilles</h1>
+
+            <article class="vieux_port">
+            <figure><img src="images/activites/1_xlarge/Vieux_port.jpg" alt="Vieux port" width="200px" height="150px"></figure>
             <h2>Vieux Port</h2>
             </div>
 
-            <div class="pomegues">
-                <img src="images/activites/1_xlarge/fort_de_pommegues.jpg" alt="fort de pomegues">
+            <article class="pomegues">
+                <figure><img src="images/activites/1_xlarge/fort_de_pommegues.jpg" alt="fort de pomegues" width="200px" height="150px"></figure>
                 <h2>Fort de Pomègues</h2>
-            </div>
+            </article>
 
-            <div class="frioul">
-                <img src="images/activites/1_xlarge/ile_du_frioul.jpg" alt=" ile du frioul">
+            <article class="frioul">
+                <figure><img src="images/activites/1_xlarge/ile_du_frioul.jpg" alt=" ile du frioul" width="200px" height="150px"></figure>
                 <h2>Île du Frioul</h2>
-            </div>
+            </article>
 
-            <div class="calanques">
-                <img src="images/activites/1_xlarge/parc_national_des_calanques.jpg" alt="parc national des calanques">
+            <article class="calanques">
+                <figure><img src="images/activites/1_xlarge/parc_national_des_calanques.jpg" alt="parc national des calanques" width="200px" height="150px"></figure>
                 <h2>Parc National des Calanques</h2>
-            </div>
+            </article>
 
-            <div class="lagarde">
-                <img src="images/activites/1_xlarge/notre_dame_de_la_garde.jpg" alt="notre dame de la garde">
+            <article class="lagarde">
+                <figure><img src="images/activites/1_xlarge/notre_dame_de_la_garde.jpg" alt="notre dame de la garde" width="200px" height="150px"></figure>
                 <h2>Notre-Dame-de-la-Garde</h2>
-            </div>
+            </article>
 
-            <div class="longchamp">
-                <img src="images/activites/1_xlarge/parc_lonchamp.jpg" alt="Parc Longchamp">
+            <article class="longchamp">
+                <figure><img src="images/activites/1_xlarge/parc_lonchamp.jpg" alt="Parc Longchamp" width="200px" height="150px"></figure>
                 <h2>Parc Longchamp</h2>
-            </div>
+            </article>
 
         </div>
     </aside>
+
+    </main>
         
 
     <!--a propos + nos hebergements + assitance-->
     <footer>
 
-        <div class="propos">
+        <div id="propos">
             <h2>A propos</h2>
             <p>Fonctionnement du site</p>
             <p>Conditions générales de vente</p>
             <p>Données et confidentialité</p>
         </div>
 
-        <div class="hebergements">
+        <div id="hebergements_footer">
             <h2>Nos Hébergements</h2>
             <p>Charte qualité</p>
             <p>Soumettre votre hôtel</p>
         </div>
 
-        <div class="assistance">
+        <div id="assistance">
             <h2>Assistance</h2>
             <p>Centre d'aide</p>
             <p>Nous contacter</p>
         </div>
+
+      
+
 
     </footer>
     
