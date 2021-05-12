@@ -12,51 +12,82 @@
     <!--Logo + liste + formulaire + paragraphe -->
     <header>
 
-        <div id="logo">
-        <img src="images/logo/Reservia@3x.png" alt="logo accueil" width="90" height="40" >
+        <div id="logo_menu">
+        <img src="images/logo/Reservia@3x.png" alt="logo accueil" width="150" height="65" >
+        <ul id="menu">
+            <li><a href="#hebergement_a_marseille" class="hebergement-marseille">Hébergements</li>
+            <li><a href="#activite"> Activités</li>
+            <li><a href="#">S'inscrire</a></li>
+        </ul>
         </div>
 
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
         <p>En plein centre ville ou en pleine nature</p>
 
+        <div id="search-barre">
 
-        <ul>
-            <li>Hébergements</li>
-            <li>Activités</li>
-            <li>S'inscrire</li>
-        </ul>
+            <i class="fas fa-map-marker-alt"></i>
+            <form><input type="search" value="Marseille, France" class="champ" /><input type="submit" value="Rechercher" class="rechercher"></form>
+
+        </div>
+
 
 
 
         <div>
         
         <div class="bouton">
-            Filtres
+            
 
-            <ul>
-                <li><div id="iconeheader"><i class="fas fa-money-bill-wave"></i></div><input type="button" value="Economique"></li>
-                <li><div id="iconeheader"><i class="fas fa-child"></i></div><input type="button" value="Famillial"></li>
-                <li><div id="iconeheader"><i class="fas fa-heart"></i></div><input type="button" value="Romantique"></li>
-                <li><div id="iconeheader"><i class="fas fa-dog"></i></div><input type="button" value="Animaux autorisés"></li>
-            </ul>
+            <ul class="filters">
+                
+                Filtres
+                <li>
+                    <button>
+                        <i class="fas fa-money-bill-wave"></i> Economique
+                    </button>
+                </li>
+
+                <li>
+                    <button>
+                        <i class="fas fa-child"></i> Familiale
+                    </button>
+                </li>
+
+                <li>
+                    <button>
+                        <i class="fas fa-heart"></i> Romantique
+                    </button>
+                </li>
+
+                <li>
+                    <button>
+                        <i class="fas fa-dog"></i> Animaux autorisés
+                    </button>
+                </li>
+
 
 
         </div>
 
-        <div>
-            <div id="iconeheader"><i class="fas fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
+    
+            <div id="iconeheader"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
+            
         </div>  
-        </div>
+
 
 
 
     </header>
     <main>
     <!--Hébergements à Marseilles-->
-    <section>
-    <div class="section">
-        <h1>Hébergements à Marseille</h1>
+    
+
+
+    <section id="hebergement">
+    <div id="hebergement_a_marseille"">
+        <h2 id="hebergement_a_marseille"> Hébergements à Marseille</a></h2>
 
         <!--cannebiere port mouette-->
         <article class="cpm">
@@ -127,10 +158,11 @@
 
     <!--Les plus populaires-->
     <aside>
-        <div class="aside_droit">
-            <h1> Les plus populaires</h1>
+        <div id="aside_droit">
+            <h2> Les plus populaires</h2>
 
-                <div class="matin">
+                <article> 
+            <div class="article">
                     <figure><img src="images/hebergements/1_xlarge/hotel_le_soleil_du_matin.jpg" alt="hotel le soleil du matin" width="200px" height="150px"></figure>
                     <h2>Hôtel Le soleil du matin</h2>
                     <p>Nuit à partir de 128 € </p>
@@ -139,7 +171,8 @@
 
                 </article>
 
-                <div class="coeur_de_leau">
+                <article>
+                <div class="article">
                     <figure><img src="images/hebergements/1_xlarge/au_coeur_de_leau.jpg" alt="au coeur de l'eau" width="200px" height="150px"></figure>
                     <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                     <p>Nuit à partir de 71 €</p>
@@ -148,7 +181,9 @@
 
                 </article>
 
-                <div class="bleu_et_blanc">
+
+                <article>
+                <div class="article">
                     <figure><img src="images/hebergements/1_xlarge/hotel_tout_bleu_et_blanc.jpg" alt="Hotel tout bleu et blanc" width="200px" height="150px"></figure>
                     <h2>Hôtel Tout bleu et blanc</h2>
                     <p>Nuit à partir de 68 €</p>
@@ -158,11 +193,13 @@
 
         </div>
     </aside>
+</div>
+
 
     <!--Activité à Marseille-->   
     <aside>
-        <div class="activite">
-            <h1>Activités à Marseilles</h1>
+        <div id="activites">
+            <h2>Activités à Marseilles</h2>
 
             <article class="vieux_port">
             <figure><img src="images/activites/1_xlarge/Vieux_port.jpg" alt="Vieux port" width="200px" height="150px"></figure>
