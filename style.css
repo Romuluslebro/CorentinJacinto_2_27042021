@@ -9,6 +9,8 @@ body {
     margin: auto;
 }
 
+
+
 .all
 {
     margin: 0 2rem;
@@ -511,4 +513,16 @@ footer {
 footer .footer_content {
     margin-left: 30px;
     padding-right: 280px;
+}
+
+/* Ecran tablette */
+@media screen and (min-width: 768px) and (max-width: 1024px;)
+{
+
+}
+
+/* Ecran smartphone */
+@media screen and (max-width: 480px);
+{
+    
 }
