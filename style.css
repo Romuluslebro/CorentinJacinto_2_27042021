@@ -149,12 +149,12 @@ li {
     color: #0065fc;
 }
 
-#search-barre {
+#search_barre_hide_phone {
     display: flex;
     width: 100%;
 }
 
-#search-barre .rechercher {
+#search_barre_hide_phone button {
     font-family: ralewaythin, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.6em;
@@ -169,17 +169,17 @@ li {
     top: -2px;
 }
 
-#search-barre .rechercher:hover {
+#search_search_hide_phone button:hover {
     cursor: pointer;
     border: 3px outset #deebff;
 }
 
-#search-barre .champ {
+#search_search_hide_phone .champ {
     height: 30px;
     border: 1px solid #F2F2F2;
 }
 
-#search-barre .fas {
+#search_barre_hide_phone .fas {
     background-color: #F2F2F2;
     border: 3px solid #F2F2F2;
     border-top-left-radius: 10px;
@@ -195,14 +195,157 @@ li {
     padding-left: 3px;
 }
 
-.bouton {
+#search_barre_hide_phone button fas{
+
+    color: #F2F2F2;
+    background-color: #0065fc;
+}
+
+#search-barre {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #search-barre {
+        display: flex;
+        width: 100%;
+    }
+    
+    #search-barre .rechercher {
+        font-family: ralewaythin, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 0.6em;
+        color: white;
+        height: 30px;
+        background-color: #0065fc;
+        border: 3px solid #0065fc;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        top: -2px;
+    }
+    
+    #search-barre .rechercher:hover {
+        cursor: pointer;
+        border: 3px outset #deebff;
+    }
+    
+    #search-barre .champ {
+        height: 30px;
+        border: 1px solid #F2F2F2;
+    }
+    
+    #search-barre .fas {
+        background-color: #F2F2F2;
+        border: 3px solid #F2F2F2;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 30px;
+        height: 30px;
+        border: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 0.8em;
+        padding-left: 3px;
+    }
+    #search_barre_hide_phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #search-barre {
+        display: flex;
+        width: 100%;
+    }
+    
+    #search-barre .rechercher {
+        font-family: ralewaythin, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 0.6em;
+        color: white;
+        height: 30px;
+        background-color: #0065fc;
+        border: 3px solid #0065fc;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        top: -2px;
+    }
+    
+    #search-barre .rechercher:hover {
+        cursor: pointer;
+        border: 3px outset #deebff;
+    }
+    
+    #search-barre .champ {
+        height: 30px;
+        border: 1px solid #F2F2F2;
+    }
+    
+    #search-barre .fas {
+        background-color: #F2F2F2;
+        border: 3px solid #F2F2F2;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 30px;
+        height: 30px;
+        border: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 0.8em;
+        padding-left: 3px;
+    }
+    #search_barre_hide_phone {
+        display: none;
+    }
+}
+
+
+.bouton ul{
     display: flex;
+    flex-wrap: wrap;
+
+}
+
+.bouton li {
+    padding-bottom: 15px;
 }
 
 .bouton h2 {
     position: relative;
     left: 10px;
     top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .bouton ul {
+        display: flex;
+    }
+    
+    .bouton h2 {
+        position: relative;
+        left: 10px;
+        top: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bouton ul {
+        display: flex;
+    }
+    
+    .bouton h2 {
+        position: relative;
+        left: 10px;
+        top: 12px;
+    }
 }
 
 .filters {
@@ -294,6 +437,14 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+}
+
+@media screen and (min-width: 568px) {
+    
+}
+
+@media screen and () {
+    
 }
 
 .hotel {
