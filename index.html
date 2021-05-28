@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="iconesfa/css/all.min.css">
     <link rel="icon" type="image/svg" sizes="100x100" href="images/logo/Reservia.svg">
@@ -20,11 +20,16 @@
 
                 <a href="#"><img src="images/logo/Reservia@3x.png" alt="logo accueil" width="150" height="65"></a>-
                 <ul id="menu">
-                    <li><a href="#hebergement_a_marseille_titre" class="menu_hebergement">Hébergements</a></li>
-                    <li><a href="#activite_a_marseille" class="menu_activite"> Activités</a></li>
+                    <li><a href="#hebergement_a_marseille_titre" class="menu_hebergement hidephone">Hébergements</a></li>
+                    <li><a href="#activite_a_marseille" class="menu_activite hidephone"> Activités</a></li>
                     <li><a href="#" class="menu_inscription">S'inscrire</a></li>
                 </ul>
             </div>
+
+            <ul id="menu_phone">
+                <li class="activited"><a href="#hebergement_a_marseille_titre" class="menu_hebergement_phone">Hébergements</a></li>
+                <li><a href="#activite_a_marseille" class="menu_activite_hidephone">Activités</a></li>
+            </ul>
 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
@@ -375,27 +380,28 @@
 
         <!--a propos + nos hebergements + assitance-->
         <footer>
-
             <div class="footer_content">
+
+            <div class="a_propos">
                 <h2>A propos</h2>
                 <p>Fonctionnement du site</p>
                 <p>Conditions générales de vente</p>
                 <p>Données et confidentialité</p>
             </div>
 
-            <div class="footer_content">
+            <div class="nos_hebergements">
                 <h2>Nos Hébergements</h2>
                 <p>Charte qualité</p>
                 <p>Soumettre votre hôtel</p>
             </div>
 
-            <div class="footer_content">
+            <div class="assitance">
                 <h2>Assistance</h2>
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>
             </div>
 
-
+        </div>
 
 
         </footer>
