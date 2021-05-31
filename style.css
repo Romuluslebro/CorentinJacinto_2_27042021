@@ -59,21 +59,21 @@ p {
     color: #0065fc;
 }
 
-#menu_phone{
+#menu_phone {
     display: flex;
     width: 100%;
     padding: 0px;
     margin-bottom: 40px;
 }
 
-#menu_phone li{
+#menu_phone li {
     max-width: 50%;
     width: 100%;
     position: relative;
     margin: 0px;
 }
 
-#menu_phone li:after{
+#menu_phone li:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -94,27 +94,29 @@ p {
     cursor: pointer;
 }
 
-#menu_phone li.activited a{
+#menu_phone li.activited a {
     color: #0065fc;
-
 }
 
-#menu_phone li.activited:after{
+#menu_phone li.activited:after {
     background-color: #0065fc;
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .hidephone {
         display: inline;
     }
-
-    #menu_phone{
+    #menu_phone {
         display: none;
     }
 }
 
+/* responsive desktop*/
+
 @media screen and (min-width: 1200px) {
-    #menu_phone{
+    #menu_phone {
         display: none;
     }
     .hidephone {
@@ -122,18 +124,22 @@ p {
     }
 }
 
-.menu_inscription{
+.menu_inscription {
     font-weight: 1000;
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
-    .menu_inscription{
+    .menu_inscription {
         font-weight: normal;
     }
 }
 
+/* responsive desktop*/
+
 @media screen and (min-width: 1200px) {
-    .menu_inscription{
+    .menu_inscription {
         font-weight: normal;
     }
 }
@@ -159,14 +165,14 @@ li {
     font-weight: bold;
     font-size: 0.6em;
     color: white;
-    height: 30px;
+    height: 35px;
+    width: 35px;
     background-color: #0065fc;
     border: 3px solid #0065fc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
     position: relative;
-    top: -2px;
 }
 
 #search_search_hide_phone button:hover {
@@ -179,7 +185,7 @@ li {
     border: 1px solid #F2F2F2;
 }
 
-#search_barre_hide_phone .fas {
+#search_barre_hide_phone .marker {
     background-color: #F2F2F2;
     border: 3px solid #F2F2F2;
     border-top-left-radius: 10px;
@@ -195,22 +201,26 @@ li {
     padding-left: 3px;
 }
 
-#search_barre_hide_phone button fas{
-
-    color: #F2F2F2;
-    background-color: #0065fc;
+#search_barre_hide_phone button {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    padding-top: 10px;
+    padding-right: 5px;
 }
 
 #search-barre {
     display: none;
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     #search-barre {
         display: flex;
         width: 100%;
     }
-    
     #search-barre .rechercher {
         font-family: ralewaythin, Arial, Helvetica, sans-serif;
         font-weight: bold;
@@ -225,17 +235,14 @@ li {
         position: relative;
         top: -2px;
     }
-    
     #search-barre .rechercher:hover {
         cursor: pointer;
         border: 3px outset #deebff;
     }
-    
     #search-barre .champ {
         height: 30px;
         border: 1px solid #F2F2F2;
     }
-    
     #search-barre .fas {
         background-color: #F2F2F2;
         border: 3px solid #F2F2F2;
@@ -255,13 +262,14 @@ li {
         display: none;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     #search-barre {
         display: flex;
         width: 100%;
     }
-    
     #search-barre .rechercher {
         font-family: ralewaythin, Arial, Helvetica, sans-serif;
         font-weight: bold;
@@ -276,17 +284,14 @@ li {
         position: relative;
         top: -2px;
     }
-    
     #search-barre .rechercher:hover {
         cursor: pointer;
         border: 3px outset #deebff;
     }
-    
     #search-barre .champ {
         height: 30px;
         border: 1px solid #F2F2F2;
     }
-    
     #search-barre .fas {
         background-color: #F2F2F2;
         border: 3px solid #F2F2F2;
@@ -307,11 +312,9 @@ li {
     }
 }
 
-
-.bouton ul{
+.bouton ul {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .bouton li {
@@ -324,11 +327,12 @@ li {
     top: 12px;
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .bouton ul {
         display: flex;
     }
-    
     .bouton h2 {
         position: relative;
         left: 10px;
@@ -336,11 +340,12 @@ li {
     }
 }
 
+/* responsive desktop*/
+
 @media screen and (min-width: 1200px) {
     .bouton ul {
         display: flex;
     }
-    
     .bouton h2 {
         position: relative;
         left: 10px;
@@ -422,6 +427,14 @@ li {
     width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
 #hebergement {
     background-color: #F2F2F2;
     width: 100%;
@@ -439,12 +452,20 @@ li {
     grid-template-rows: auto;
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 568px) {
-    
+    #hebergement_a_marseille {
+      grid-template-columns: 1fr 1fr ;
+    }
 }
 
-@media screen and () {
-    
+/* responsive desktop*/
+
+@media screen and (min-width: 1200px) {
+    #hebergement_a_marseille{
+
+    }
 }
 
 .hotel {
@@ -551,6 +572,17 @@ li {
     cursor: pointer;
 }
 
+/* responsive tablette*/
+@media screen and (min-width: 768px) {
+    
+}
+
+/* responsive desktop*/
+
+@media screen and (min-width:1200px) {
+    
+}
+
 #droit img {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -624,7 +656,7 @@ li {
     padding-bottom: 30px;
 }
 
-/* format tablette*/
+/* responsive tablette*/
 
 @media screen and (min-width: 768px) {
     .activites {
@@ -632,6 +664,8 @@ li {
         grid-template-rows: repeat(3, 200px);
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .activites {
@@ -683,12 +717,16 @@ section.activites article figure>div>img {
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, .15);
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .article_activite_un {
         grid-column: 1/2;
         grid-row: 1/2;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .article_activite_un {
@@ -704,12 +742,16 @@ section.activites article figure>div>img {
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, .15);
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .article_activite_deux {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .article_activite_deux {
@@ -725,12 +767,16 @@ section.activites article figure>div>img {
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, .15);
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .article_activite_trois {
         grid-column: 1/2;
         grid-row: 3/4;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .article_activite_trois {
@@ -746,12 +792,16 @@ section.activites article figure>div>img {
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, .15);
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .article_activite_quatre {
         grid-column: 2/3;
         grid-row: 1/2;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .article_activite_quatre {
@@ -767,12 +817,16 @@ section.activites article figure>div>img {
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, .15);
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .article_activite_cinq {
         grid-column: 2/3;
         grid-row: 2/3;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .article_activite_cinq {
@@ -788,12 +842,16 @@ section.activites article figure>div>img {
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, .15);
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
     .article_activite_six {
         grid-column: 2/3;
         grid-row: 3/4;
     }
 }
+
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
     .article_activite_six {
@@ -830,11 +888,9 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     margin: auto;
-
 }
 
 footer .footer_content {
-    
     margin-left: 30px;
     padding-right: 280px;
     display: grid;
@@ -857,51 +913,46 @@ footer .assitance {
     grid-row: 3/4;
 }
 
+/* responsive tablette*/
+
 @media screen and (min-width: 768px) {
-    
-    .footer_content{
+    .footer_content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 70px;
     }
-
-    footer .a_propos{
+    footer .a_propos {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
-    footer .nos_hebergements{
+    footer .nos_hebergements {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
-    footer .assitance{
+    footer .assitance {
         grid-column: 3/4;
         grid-row: 1/2;
         margin-right: 0px;
     }
 }
 
+/* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
-
-    .footer_content{
+    .footer_content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 150px;
     }
-
-    footer .a_propos{
+    footer .a_propos {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
-    footer .nos_hebergements{
+    footer .nos_hebergements {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
-    footer .assitance{
+    footer .assitance {
         grid-column: 3/4;
         grid-row: 1/2;
     }
