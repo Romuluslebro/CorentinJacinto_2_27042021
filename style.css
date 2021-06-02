@@ -222,9 +222,8 @@ input {
 /* responsive tablette*/
 
 @media screen and (min-width: 768px) {
-    
-    #search-barre  {
-        display: flex ;
+    #search-barre {
+        display: flex;
     }
     #search-barre .rechercher {
         font-family: ralewaythin, Arial, Helvetica, sans-serif;
@@ -266,16 +265,19 @@ input {
     #search_barre_hide_phone {
         display: none;
     }
-    
-    #search-barre input  {
-        
+    #search-barre form {
+        display: flex;
+    }
+    input[type="search"] {
+        width: 280px;
+        padding-left: 1em;
     }
 }
 
 /* responsive desktop*/
 
 @media screen and (min-width: 1200px) {
-    #search-barre {
+    #search-barre form {
         display: flex;
         width: 100%;
     }
@@ -318,6 +320,10 @@ input {
     }
     #search_barre_hide_phone {
         display: none;
+    }
+    input[type="search"] {
+        width: 280px;
+        padding-left: 1em;
     }
 }
 
@@ -408,6 +414,12 @@ input {
     color: #0065fc;
 }
 
+@media screen and (min-width: 1200px) {
+    .bouton {
+        display: flex;
+    }
+}
+
 #iconeheader {
     display: inline-block;
 }
@@ -437,38 +449,42 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-    .col_droite{
+    .col_droite {
         display: flex;
         flex-direction: column-reverse;
     }
-
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .col_droite {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
-#hebergement{
+#hebergement {
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    #hebergement{
+    #hebergement {
         width: 100%;
-       margin-top: 30px;
+        margin-top: 30px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     #hebergement {
         background-color: #F2F2F2;
-        width: 100%;
+        width: 70%;
         height: auto;
         border-radius: 15px;
         padding: 10px;
         margin: 0px;
         display: block;
-        max-width: 70%;
+        margin-right: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }
 
@@ -477,22 +493,6 @@ input {
     grid-template-columns: repeat 1fr;
     grid-template-rows: auto;
     width: 100%;
-}
-
-/* responsive tablette*/
-
-@media screen and (min-width: 768px) {
-    #hebergement_a_marseille {
-      grid-template-columns: 1fr 1fr ;
-    }
-}
-
-/* responsive desktop*/
-
-@media screen and (min-width: 1200px) {
-    #hebergement_a_marseille{
-
-    }
 }
 
 .hotel {
@@ -506,19 +506,23 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-    #hebergement_a_marseille{
+    #hebergement_a_marseille {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
 }
 
-#hebergement_a_marseille_titre {
-    margin-left: 30px;
+@media screen and (min-width: 1200px) {
+    #hebergement_a_marseille {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 .afficher_plus {
     margin: 0px;
-    margin-left: 30px;
+    margin-left: 9px;
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -567,6 +571,10 @@ input {
     color: black;
 }
 
+#les_plus_populaires_titre {
+    margin-left: 0;
+}
+
 #droit {
     background-color: #F2F2F2;
     width: 100%;
@@ -605,13 +613,13 @@ input {
 }
 
 /* responsive tablette*/
+
 @media screen and (min-width: 768px) {
-    #droit{
+    #droit {
         width: 100%;
         max-width: 100%;
         margin-left: 2px;
     }
-
     #droit .populaire {
         width: 90%;
     }
@@ -620,7 +628,12 @@ input {
 /* responsive desktop*/
 
 @media screen and (min-width:1200px) {
-    
+    #droit {
+        width: 30%;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 #droit img {
@@ -657,7 +670,19 @@ input {
 }
 
 #droit h2 {
-    margin-left: 30px;
+    margin-left: 42px;
+}
+
+@media screen and (min-width: 768px) {
+    #droit h2 {
+        margin-left: 42px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #droit h2 {
+        margin-left: 15px;
+    }
 }
 
 #droit h3 {
@@ -935,7 +960,7 @@ footer .footer_content {
     padding-right: 280px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
 }
 
 footer .a_propos {
@@ -956,8 +981,6 @@ footer .assitance {
 /* responsive tablette*/
 
 @media screen and (min-width: 768px) {
-    
-
     .footer_content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -984,7 +1007,7 @@ footer .assitance {
     .footer_content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 150px;
+        gap: 280px;
     }
     footer .a_propos {
         grid-column: 1/2;
